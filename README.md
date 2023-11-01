@@ -24,7 +24,9 @@ having COUNT(customer_id)>300;
 Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
 
 
-```select COUNT(film_id) from film WHERE length > (select AVG(length) from film);```
+```
+select COUNT(film_id) from film WHERE length > (select AVG(length) from film);
+```
 
 ![img](/img/2023-11-01_15-39-14.png)
 
