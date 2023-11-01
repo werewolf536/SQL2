@@ -16,6 +16,7 @@ join city ci on ci.city_id = ad.city_id
 group by st.store_id, ci.city, sta.first_name, sta.last_name 
 having COUNT(customer_id)>300; 
 ```
+
 ![img](/img/2023-11-01_15-15-22.png)
 
 
@@ -24,6 +25,7 @@ having COUNT(customer_id)>300;
 
 
 ```select COUNT(film_id) from film WHERE length > (select AVG(length) from film);```
+
 ![img](/img/2023-11-01_15-39-14.png)
 
 
@@ -35,3 +37,4 @@ from payment p
 group by MONTH(payment_date)
 ORDER  BY COUNT(payment_id) DESC limit 1;
 ```
+![img](/img/2023-11-01_15-33-40.png)
